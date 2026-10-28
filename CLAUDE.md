@@ -166,6 +166,9 @@ The existing Bridgeport and West Haven pages are the model: each is **genuinely 
 7. ~~`/rental-property-management` status~~ — **resolved:** 404 (so is `/pricing`).
 8. **Social profiles:** do `facebook.com/mbmgmts` / `linkedin.com/company/mbmgmts` exist? (removed from schema until confirmed)
 9. **GBP URL** and a real logo/photo URL for schema `sameAs` / `image`.
+10. **Homepage "Off market sale" card:** what is the service, or remove it? (`paste-ready/06-homepage.md`)
+11. **New Haven page claims:** rental-licensing scope, licensing/lead service claims, in-person meetings, which neighborhoods MB actually manages in (`paste-ready/08-new-haven-page.md`, bottom).
+12. **East Haven FAQ lists Short Beach**, which is in Branford. Keep as "nearby" or remove?
 
 ---
 
@@ -174,5 +177,7 @@ The existing Bridgeport and West Haven pages are the model: each is **genuinely 
 - **Full live audit done 2026-10-28** — every page, sitemap and robots.txt: see `audits/2026-10-28-site-audit.md`. Paste-ready fixes are in `paste-ready/`.
 - Key corrections to the earlier sample: the **homepage** is the worst slop page (real-estate-agent demo copy, FAQ answers that don't match their questions); `/contact-us` body is Squarespace demo text; every location page's CTA has the demo line "Driven by curiosity…"; site-wide and per-page JSON-LD contain placeholders and copy-paste errors; the unconfigured newsletter warning is publicly visible site-wide.
 - The `/about-us` stray meta-description H3 is already fixed.
+- Location pages also carry wrong-city copy ("Our West Haven… services" on Hamden/Milford; West Haven CTAs on Hamden/Milford/Bridgeport; "Eest Haven"), and the "Get Started" buttons have empty links: see `paste-ready/05`.
+- Drafted, awaiting Greg: homepage rewrite (`06`), `/contact-us` copy (`07`), New Haven page (`08`).
 - Not verifiable from the sandbox: Termly-embedded content on `/privacy-policy` and `/terms-conditions` (app.termly.io blocked).
 - NAP, service areas, positioning, and platform in §2 are taken from the live `/about-us` and `/help` pages.
