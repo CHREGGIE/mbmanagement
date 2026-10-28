@@ -12,8 +12,8 @@ Because of that, every deliverable must be **paste-ready and labeled with where 
 
 - **Page body copy** → markdown, with section headers matching the Squarespace blocks they map to.
 - **SEO fields** → labeled `Title Tag:` and `Meta Description:` with character counts, for _Page Settings → SEO_.
-- **Schema (JSON-LD)** → a single self-contained `<script type="application/ld+json">` block for _Settings → Advanced → Code Injection_ (per-page header) or a Code Block.
-- **CSS / custom code** → labeled for _Code Injection_ (site header) or a per-page Code Block.
+- **Schema (JSON-LD)** → a single self-contained `<script type="application/ld+json">` block for _Pages → Custom Code → Code Injection_ (site-wide header) or _⚙ Page Settings → Advanced_ (per-page header), or a Code Block. (Squarespace moved site-wide Code Injection to Pages → Custom Code in 2026; confirmed by Greg.)
+- **CSS / custom code** → labeled for _Pages → Custom Code → Code Injection_ (site header) or a per-page Code Block.
 - **NAP** → always identical to the canonical block in §2. Never paraphrase it.
 
 Do **not** invent facts to fill a page (pricing numbers, testimonials, neighborhoods served). If a detail isn't in this doc, flag it in §8 and ask Greg.

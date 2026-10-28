@@ -1,5 +1,6 @@
-# WHERE: Squarespace → Settings → Developer Tools → URL Mappings
-#        (older 7.1 menus: Settings → Advanced → URL Mappings)
+# WHERE: URL Mappings. Squarespace has moved this menu; site-wide code now lives under
+#        Pages → Custom Code, so check there first. If it isn't there, type "URL mappings"
+#        into the search bar at the top of the Squarespace dashboard.
 # Paste the two lines below as-is. Both URLs return 404 today; 
 # their content now lives at /property-management-services.
 
