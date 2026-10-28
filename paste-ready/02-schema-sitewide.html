@@ -8,6 +8,7 @@ CHANGES vs. live:
   - added legalName
   - areaServed: all 6 CT cities (Milford + Bridgeport were missing)
   - makesOffer: each service's areaServed now points to the full service area instead of "New Haven CT"
+  - added openingHoursSpecification (Mon–Fri 9–5, from /help)
   - kept: slogan, priceRange, geo, knowsAbout, serviceType
   - TODO later: add "image" (real photo/logo URL) and the real GBP + social URLs to "sameAs"
 -->
@@ -37,6 +38,14 @@ CHANGES vs. live:
     "latitude": 41.3083,
     "longitude": -72.9279
   },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
   "areaServed": [
     { "@type": "City", "name": "New Haven", "containedInPlace": { "@type": "State", "name": "Connecticut" } },
     { "@type": "City", "name": "West Haven", "containedInPlace": { "@type": "State", "name": "Connecticut" } },
