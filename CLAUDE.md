@@ -58,8 +58,8 @@ info@mbmgmts.com
   - `/property-management-milford-ct`
   - `/property-management-bridgeport-ct`
 - `/property-management-services` — services page (holds the old `/pricing` demo content; in nav + sitemap)
-- `/rental-property-management` — **404** (verified 2026-10-28; 301 → `/property-management-services`)
-- `/pricing` — **404** (verified 2026-10-28; 301 → `/property-management-services`)
+- `/rental-property-management` — 301 → `/property-management-services` (live 2026-10-28)
+- `/pricing` — 301 → `/property-management-services` (live 2026-10-28)
 - `/property-management-new-haven-ct` — **404, but linked from the "Areas We Serve" block on all 5 location pages**
 - `/about-us`
 - `/contact-us`
@@ -171,6 +171,12 @@ The existing Bridgeport and West Haven pages are the model: each is **genuinely 
 12. **East Haven FAQ lists Short Beach**, which is in Branford. Keep as "nearby" or remove?
 
 ---
+
+## 8b. Done log (verified live)
+
+- 2026-10-28: site-wide JSON-LD replaced (`paste-ready/02`, incl. hours); Business Information filled (Suite 205); Squarespace demo social links removed. Rich Results: our block valid; Squarespace's auto Organization block stays "Unnamed item" (not editable, harmless).
+- 2026-10-28: URL mappings live: `/pricing` and `/rental-property-management` 301 → `/property-management-services`.
+- Still open from the quick list: footer About/Contact links (still `http://squarespace.com`), Business Info line 1 "Church Street" → "Church St".
 
 ## 9. What's been verified vs. assumed
 
