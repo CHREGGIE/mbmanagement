@@ -57,8 +57,10 @@ info@mbmgmts.com
   - `/property-management-hamden-ct`
   - `/property-management-milford-ct`
   - `/property-management-bridgeport-ct`
-- `/rental-property-management` — primary service page _(⚠ errored on fetch — see §5)_
-- `/pricing`
+- `/property-management-services` — services page (holds the old `/pricing` demo content; in nav + sitemap)
+- `/rental-property-management` — **404** (verified 2026-10-28; 301 → `/property-management-services`)
+- `/pricing` — **404** (verified 2026-10-28; 301 → `/property-management-services`)
+- `/property-management-new-haven-ct` — **404, but linked from the "Areas We Serve" block on all 5 location pages**
 - `/about-us`
 - `/contact-us`
 - `/help`
@@ -159,15 +161,18 @@ The existing Bridgeport and West Haven pages are the model: each is **genuinely 
 2. **Which Brooklyn neighborhoods**, exactly, and in what priority order?
 3. **Real pricing numbers** for the `/pricing` rewrite?
 4. **Real testimonials** available, or omit until there are?
-5. **Sitemap URL** + confirmation all live pages are in it.
+5. ~~Sitemap~~ — **resolved:** `https://www.mbmgmts.com/sitemap.xml`, 12 URLs, matches the live set.
 6. **Brand assets** — logo, brand colors/fonts — if any CSS/code work is in scope.
-7. **`/rental-property-management` status** — what response code is it actually returning?
+7. ~~`/rental-property-management` status~~ — **resolved:** 404 (so is `/pricing`).
+8. **Social profiles:** do `facebook.com/mbmgmts` / `linkedin.com/company/mbmgmts` exist? (removed from schema until confirmed)
+9. **GBP URL** and a real logo/photo URL for schema `sameAs` / `image`.
 
 ---
 
 ## 9. What's been verified vs. assumed
 
-- **Inspected live:** `/property-management-bridgeport-ct`, `/property-management-west-haven`, `/pricing`, `/about-us`.
-- **Attempted, errored:** `/rental-property-management` (4xx on fetch — unverified).
-- **Not yet inspected:** `/`, `/contact-us`, `/help`, `/privacy-policy`, `/terms-conditions`, `/property-management-east-haven`, `/property-management-hamden-ct`, `/property-management-milford-ct`. Audit these against §5 before editing.
-- NAP, service areas, positioning, and platform in §2 are taken from the live `/about-us` page.
+- **Full live audit done 2026-10-28** — every page, sitemap and robots.txt: see `audits/2026-10-28-site-audit.md`. Paste-ready fixes are in `paste-ready/`.
+- Key corrections to the earlier sample: the **homepage** is the worst slop page (real-estate-agent demo copy, FAQ answers that don't match their questions); `/contact-us` body is Squarespace demo text; every location page's CTA has the demo line "Driven by curiosity…"; site-wide and per-page JSON-LD contain placeholders and copy-paste errors; the unconfigured newsletter warning is publicly visible site-wide.
+- The `/about-us` stray meta-description H3 is already fixed.
+- Not verifiable from the sandbox: Termly-embedded content on `/privacy-policy` and `/terms-conditions` (app.termly.io blocked).
+- NAP, service areas, positioning, and platform in §2 are taken from the live `/about-us` and `/help` pages.

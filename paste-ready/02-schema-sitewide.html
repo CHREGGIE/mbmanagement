@@ -1,0 +1,43 @@
+<!--
+WHERE: Settings → Developer Tools → Code Injection → HEADER (site-wide)
+ACTION: REPLACE the existing ["LocalBusiness","ProfessionalService"] <script> block
+        (the one with path-to-logo.png / YOUR_GBP_CID). Don't keep both.
+CHANGES vs. live:
+  - removed placeholders: logo/image (path-to-*.png/jpg), hasMap (Your+Business+Address), sameAs GBP (YOUR_GBP_CID)
+  - streetAddress now includes "Suite 205" (byte-identical NAP)
+  - areaServed now lists all 6 CT cities (Milford + Bridgeport were missing)
+  - removed facebook.com/mbmgmts + linkedin.com/company/mbmgmts — re-add to "sameAs" ONLY if those profiles really exist
+  - TODO when available: add "image" (a real photo/logo URL) and the real GBP URL to "sameAs"
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "@id": "https://www.mbmgmts.com/#company",
+  "name": "MB Mgmt Services",
+  "legalName": "MB Management LLC",
+  "url": "https://www.mbmgmts.com/",
+  "description": "Full-service residential property management for landlords and investors in New Haven, CT and the Greater New Haven area.",
+  "telephone": "+1-203-903-1241",
+  "email": "info@mbmgmts.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "129 Church St, Suite 205",
+    "addressLocality": "New Haven",
+    "addressRegion": "CT",
+    "postalCode": "06510",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 41.3083, "longitude": -72.9279 },
+  "areaServed": [
+    { "@type": "City", "name": "New Haven", "containedInPlace": { "@type": "State", "name": "Connecticut" } },
+    { "@type": "City", "name": "West Haven", "containedInPlace": { "@type": "State", "name": "Connecticut" } },
+    { "@type": "City", "name": "East Haven", "containedInPlace": { "@type": "State", "name": "Connecticut" } },
+    { "@type": "City", "name": "Hamden", "containedInPlace": { "@type": "State", "name": "Connecticut" } },
+    { "@type": "City", "name": "Milford", "containedInPlace": { "@type": "State", "name": "Connecticut" } },
+    { "@type": "City", "name": "Bridgeport", "containedInPlace": { "@type": "State", "name": "Connecticut" } }
+  ],
+  "serviceType": "Residential property management",
+  "knowsAbout": ["property management", "tenant screening", "rent collection", "maintenance coordination", "inspections", "financial reporting", "multifamily management"]
+}
+</script>

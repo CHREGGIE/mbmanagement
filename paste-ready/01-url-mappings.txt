@@ -1,0 +1,12 @@
+# WHERE: Squarespace → Settings → Developer Tools → URL Mappings
+#        (older 7.1 menus: Settings → Advanced → URL Mappings)
+# Paste the two lines below as-is. Both URLs return 404 today; 
+# their content now lives at /property-management-services.
+
+/pricing -> /property-management-services 301
+/rental-property-management -> /property-management-services 301
+
+# DO NOT add a mapping for /property-management-new-haven-ct.
+# The "Areas We Serve" block links there from all 5 location pages and it 404s.
+# Either build that page (recommended: New Haven is HQ and has no page) or,
+# as a stopgap, change the block's New Haven link to "/". See audit §2.

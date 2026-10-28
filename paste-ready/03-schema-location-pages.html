@@ -1,0 +1,75 @@
+<!--
+Per-page schema for the 5 CT location pages.
+WHERE: each page → ⚙ Page Settings → Advanced → Page Header Code Injection
+ACTION: REPLACE the existing per-page LocalBusiness <script> on that page.
+WHY: the live blocks are copy-paste broken — Milford and Bridgeport both claim
+     areaServed "West Haven"; East Haven and West Haven point "url" at -ct URLs that 404;
+     all use name "MB MGMTS" instead of the canonical "MB Mgmt Services".
+     These replacements are a Service tied to the site-wide business via @id, so Google
+     sees ONE business (one NAP) serving five cities instead of six conflicting businesses.
+-->
+
+<!-- ===== /property-management-west-haven ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Property Management in West Haven, CT",
+  "serviceType": "Residential property management",
+  "url": "https://www.mbmgmts.com/property-management-west-haven",
+  "provider": { "@id": "https://www.mbmgmts.com/#company" },
+  "areaServed": { "@type": "City", "name": "West Haven", "containedInPlace": { "@type": "State", "name": "Connecticut" } }
+}
+</script>
+
+<!-- ===== /property-management-east-haven ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Property Management in East Haven, CT",
+  "serviceType": "Residential property management",
+  "url": "https://www.mbmgmts.com/property-management-east-haven",
+  "provider": { "@id": "https://www.mbmgmts.com/#company" },
+  "areaServed": { "@type": "City", "name": "East Haven", "containedInPlace": { "@type": "State", "name": "Connecticut" } }
+}
+</script>
+
+<!-- ===== /property-management-hamden-ct ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Property Management in Hamden, CT",
+  "serviceType": "Residential property management",
+  "url": "https://www.mbmgmts.com/property-management-hamden-ct",
+  "provider": { "@id": "https://www.mbmgmts.com/#company" },
+  "areaServed": { "@type": "City", "name": "Hamden", "containedInPlace": { "@type": "State", "name": "Connecticut" } }
+}
+</script>
+
+<!-- ===== /property-management-milford-ct ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Property Management in Milford, CT",
+  "serviceType": "Residential property management",
+  "url": "https://www.mbmgmts.com/property-management-milford-ct",
+  "provider": { "@id": "https://www.mbmgmts.com/#company" },
+  "areaServed": { "@type": "City", "name": "Milford", "containedInPlace": { "@type": "State", "name": "Connecticut" } }
+}
+</script>
+
+<!-- ===== /property-management-bridgeport-ct ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Property Management in Bridgeport, CT",
+  "serviceType": "Residential property management",
+  "url": "https://www.mbmgmts.com/property-management-bridgeport-ct",
+  "provider": { "@id": "https://www.mbmgmts.com/#company" },
+  "areaServed": { "@type": "City", "name": "Bridgeport", "containedInPlace": { "@type": "State", "name": "Connecticut" } }
+}
+</script>
