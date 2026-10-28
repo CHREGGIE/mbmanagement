@@ -42,7 +42,7 @@
 
 ### All 5 location pages
 - The bodies are good. Shared 6-word phrases between any two pages come to **4–5%** once nav, footer, "Areas We Serve" and CTA are excluded, well under the 30% rule.
-- **But** every page's CTA section still has the demo line "**Driven by curiosity and built on purpose, this is where bold thinking meets thoughtful execution. Let's create something meaningful together.**"
+- **But** every page still has the demo line, directly under the H1, "**Driven by curiosity and built on purpose, this is where bold thinking meets thoughtful execution. Let's create something meaningful together.**"
 - The "Areas We Serve" New Haven card links to a **404** (above).
 - Milford and Bridgeport have **two `<h1>`s** ("Property Management in" / "Milford, CT" split into two heading blocks). Merge each into one block with a line break.
 - The intro paragraph on each page is formatted as an `<h3>`. Make it normal paragraph text.
@@ -89,7 +89,7 @@ Fixes: `paste-ready/04-seo-fields.md`.
 | URL | Real status now |
 |---|---|
 | `/rental-property-management`, `/pricing` | **404**. They'll move to "Not found". 301 them to `/property-management-services` |
-| `/property-management-*` (5) | Good bodies. Fix titles, meta, schema, CTA demo line and broken link, then request indexing |
+| `/property-management-*` (5) | Good bodies. Fix titles, meta, schema, demo line under the H1, wrong-city copy (`05`) and broken link, then request indexing |
 | `/about-us` | Mostly clean. Swap the demo image |
 | `/help` | Real, specific content ✅ |
 | `/privacy-policy` | Termly-only. Verify that it renders |

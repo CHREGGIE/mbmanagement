@@ -175,7 +175,7 @@ The existing Bridgeport and West Haven pages are the model: each is **genuinely 
 ## 9. What's been verified vs. assumed
 
 - **Full live audit done 2026-10-28** — every page, sitemap and robots.txt: see `audits/2026-10-28-site-audit.md`. Paste-ready fixes are in `paste-ready/`.
-- Key corrections to the earlier sample: the **homepage** is the worst slop page (real-estate-agent demo copy, FAQ answers that don't match their questions); `/contact-us` body is Squarespace demo text; every location page's CTA has the demo line "Driven by curiosity…"; site-wide and per-page JSON-LD contain placeholders and copy-paste errors; the unconfigured newsletter warning is publicly visible site-wide.
+- Key corrections to the earlier sample: the **homepage** is the worst slop page (real-estate-agent demo copy, FAQ answers that don't match their questions); `/contact-us` body is Squarespace demo text; every location page has the demo line (under the H1) "Driven by curiosity…"; site-wide and per-page JSON-LD contain placeholders and copy-paste errors; the unconfigured newsletter warning is publicly visible site-wide.
 - The `/about-us` stray meta-description H3 is already fixed.
 - Location pages also carry wrong-city copy ("Our West Haven… services" on Hamden/Milford; West Haven CTAs on Hamden/Milford/Bridgeport; "Eest Haven"), and the "Get Started" buttons have empty links: see `paste-ready/05`.
 - Drafted, awaiting Greg: homepage rewrite (`06`), `/contact-us` copy (`07`), New Haven page (`08`).
