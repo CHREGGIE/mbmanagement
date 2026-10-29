@@ -176,7 +176,8 @@ The existing Bridgeport and West Haven pages are the model: each is **genuinely 
 
 - 2026-10-28: site-wide JSON-LD replaced (`paste-ready/02`, incl. hours); Business Information filled (Suite 205); Squarespace demo social links removed. Rich Results: our block valid; Squarespace's auto Organization block stays "Unnamed item" (not editable, harmless).
 - 2026-10-28: URL mappings live: `/pricing` and `/rental-property-management` 301 → `/property-management-services`.
-- Still open from the quick list: footer About/Contact links (still `http://squarespace.com`), Business Info line 1 "Church Street" → "Church St".
+- 2026-10-29: footer About → `/about-us`, Contact → `/contact-us` live on all pages; no squarespace.com links remain.
+- Still open from the quick list: Business Info line 1 "Church Street" → "Church St".
 
 ## 9. What's been verified vs. assumed
 
